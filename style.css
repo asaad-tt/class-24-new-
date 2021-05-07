@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fixed-width{
+    width: 1200px;
+    margin: auto;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+/* header  */
+.header-1{
+    background-color: #090501;
+}
+.first-header{
+
+}
+.first-header .header-logo h1{
+    font-family: 'Pangolin', cursive;
+    color: #dddd;
+    font-size: 50px;
+}
+.primary-menu{
+   
+}
+.primary-menu ul{
+    
+}
+.primary-menu ul li{
+    display: inline-block;
+    
+}
+.primary-menu ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 23px 20px;
+    color: #fff;
+    font-size: 20px;
+    border-right: 1px solid #dddd;
+    margin-left: -4px;
+}
+.primary-menu ul li:last-child a{
+    border-style: none;
+}
+.primary-menu ul li a:hover {
+	background-color: teal;
+	
+}
+/* primary-menu drop down  */
+.primary-menu ul li{
+    position: relative;
+}
+.primary-menu ul li ul{
+    position: absolute;
+    background-color: #090501;
+    width: 200px;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleY(0);
+}
+.primary-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.primary-menu ul li ul li{
+    display: block;
+    
+}
+.primary-menu ul li ul li a:hover {
+	background-color: teal;
+	margin-left: 0;
+}
+/* banner section  */
+.banner{
+    background: url(./images/ursa-bavcar-6O4zf9lga6Q-unsplash.jpg);
+    padding: 200px 0;
+    background-size: cover;
+}
+.banner-text h2 {
+	background: rgba(0, 0, 0, .3);
+	display: inline-block;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+.banner-text h3 {
+	background: rgba(0, 0, 0, .3);
+	padding: 10px;
+	border-radius: 10px;
+	width: 336px;
+}
+.banner-btn {
+	background: black;
+	color: #ffff;
+	display: inline-block;
+	padding: 15px;
+	margin-top: 26px;
+	border-radius: 5px;
+    transition: .5s;
+}
+
+.banner-btn:hover{
+    background: rgba(255, 118, 117, .5);
+}
+
+/* container section  */
+
+.container{
+    background: #444444;
+    padding-bottom: 50px;
+}
+.container-text {
+    width: 50%;
+    margin-top: 70px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 36px;
+}
+.container-pic{
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+}
+.container-pic img{
+    width: 300px;
+    height: auto;
+}
+/* container-2 section  */
+
+.container-2{
+    background: #458B83;
+    padding-top: 50px;
+}
+.meet-text{
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.pic-section{
+    padding-bottom: 50px;
+}
+.pic-section .pic-1{
+    width: 30%;
+    margin-right: 3%;
+    margin-left: 2%;
+}
+.pic-section .pic-2{
+    width: 30%;
+    margin-right: 3%;
+
+}
+.pic-section .pic-3{
+    width: 30%;
+}
+.pic-3 img {
+	height: 241px;
+}
+.pic-section span{
+    padding: 0 5px;
+    color: #fff;
+    cursor: pointer;
+}
